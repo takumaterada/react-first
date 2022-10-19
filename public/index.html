@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="input-area">
+      <input plaseholder="TODOを入力" />
+      <button>追加</button>
+    </div>
+    <div class="imcomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul>
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </ul>
+    </div>
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul>
+        <div class="list-row">
+          <li>TODOでした</li>
+          <button>戻す</button>
+        </div>
+      </ul>
+    </div>
     <div id="app"></div>
     <h1 id="title"></h1>
     <script src="/public/js/bundle.js"></script>
