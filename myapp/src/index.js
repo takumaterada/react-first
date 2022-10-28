@@ -1,15 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-const rootEl = document.getElementById("root");
-
-const App = () => {
-  return (
-    <React.Fragment>
-      <h1>こんにちは</h1>
-      <p>おげんきですか？</p>
-    </React.Fragment>
-  );
-};
-
-ReactDOM.createRoot(rootEl).render(<App />);
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
